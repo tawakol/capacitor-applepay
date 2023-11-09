@@ -78,6 +78,10 @@ export interface InitiatePaymentRequest {
   merchantCapabilities?: MerchantCapability[];
   billingContact?: PaymentContact;
   shippingContact?: PaymentContact;
+
+  // web only
+  currencyDecimalDigits?: number;
+  version?: number;
 }
 
 export interface CompletePaymentRequest {
