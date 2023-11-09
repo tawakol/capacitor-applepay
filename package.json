@@ -9,7 +9,7 @@
   "files": [
     "dist/",
     "ios/Plugin/",
-    "CapacitorApplePay.podspec"
+    "CapacitorApplepay.podspec"
   ],
   "author": "Halim Samy",
   "license": "MIT",
