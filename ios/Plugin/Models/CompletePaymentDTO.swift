@@ -1,11 +1,3 @@
-//
-//  CompletePaymentDTO.swift
-//  Apple Pay Plugin
-//
-//  Created by Kondrat Kielar on 10/06/2022.
-//  Copyright © 2022 Fresha. All rights reserved.
-//
-
 import Foundation
 import PassKit
 

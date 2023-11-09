@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { WebPlugin } from '@capacitor/core';
 
 import type {
@@ -15,6 +14,7 @@ export class ApplePayWeb extends WebPlugin implements ApplePayPlugin {
   canMakePayments(
     options: CanMakePaymentsRequest,
   ): Promise<CanMakePaymentsResponse>;
+
   canMakePayments(_options?: any): boolean | Promise<CanMakePaymentsResponse> {
     throw new Error('Method not implemented.');
   }

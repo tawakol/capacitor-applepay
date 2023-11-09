@@ -8,5 +8,5 @@
 
 ## Reporting a Vulnerability
 
-In case you find a security vulnerability, report it to security@fresha.com. 
+In case you find a security vulnerability, report it to me@halimsamy.com. 
 We will triage it and fix if necessary.

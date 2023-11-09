@@ -1,11 +1,3 @@
-//
-//  SummaryItemDTO.swift
-//  Apple Pay Plugin
-//
-//  Created by Kondrat Kielar on 06/06/2022.
-//  Copyright © 2022 Max Lynch. All rights reserved.
-//
-
 import PassKit
 
 public class ShippingMethodDTO: Codable {
