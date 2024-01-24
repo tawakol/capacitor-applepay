@@ -51,16 +51,37 @@ struct NameDTO: Encodable {
 struct PaymentMethodDTO: Encodable {
     let displayName: String?
     let network: String?
+    let type: String?
     let billingAddress: AddressDTO?
 
     init (with pkPaymentMethod: PKPaymentMethod) {
         self.displayName = pkPaymentMethod.displayName
         self.network = pkPaymentMethod.network?.rawValue
+        self.type = paymentMethodTypeToString(paymentMethodType: pkPaymentMethod.type)
         if #available(iOS 13.0, *) {
             self.billingAddress = AddressDTO(with: pkPaymentMethod.billingAddress)
         } else {
             self.billingAddress = nil
         }
+    }
+}
+
+func paymentMethodTypeToString(paymentMethodType: PKPaymentMethodType) -> String {
+    switch paymentMethodType {
+    case .credit:
+        return "credit"
+    case .debit:
+        return "debit"
+    case .prepaid:
+        return "prepaid"
+    case .store:
+        return "store"
+    case .unknown:
+        return "unknown"
+    case .eMoney:
+        return "unknown"
+    @unknown default:
+        return "unknown"
     }
 }
 
