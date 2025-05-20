@@ -171,6 +171,8 @@ Completes current payment
 | **`merchantCapabilities`**          | <code>MerchantCapability[]</code>                         |
 | **`billingContact`**                | <code><a href="#paymentcontact">PaymentContact</a></code> |
 | **`shippingContact`**               | <code><a href="#paymentcontact">PaymentContact</a></code> |
+| **`currencyDecimalDigits`**         | <code>number</code>                                       |
+| **`version`**                       | <code>number</code>                                       |
 
 
 #### PaymentSummaryItem
